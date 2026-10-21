@@ -1,0 +1,61 @@
+{
+    "project_name": "T20 World Cup Cricket Score Predictor",
+    "trained_timestamp": "2026-10-20 19:49:47",
+    "best_model_name": "Random Forest Regressor",
+    "supported_teams": [
+        "India",
+        "Australia",
+        "England",
+        "Pakistan",
+        "South Africa",
+        "New Zealand",
+        "West Indies",
+        "Sri Lanka",
+        "Bangladesh",
+        "Ireland",
+        "Zimbabwe",
+        "Netherlands",
+        "Scotland",
+        "Namibia",
+        "Nepal",
+        "United Arab Emirates",
+        "United States of America",
+        "Oman",
+        "Canada"
+    ],
+    "feature_columns": [
+        "batting_team",
+        "bowling_team",
+        "current_score",
+        "overs_completed",
+        "wickets_lost",
+        "runs_last_5_overs",
+        "current_run_rate"
+    ],
+    "dataset_statistics": {
+        "total_matches_evaluated": 1416,
+        "train_matches": 1132,
+        "test_matches": 284,
+        "total_snapshots": 21079,
+        "average_first_innings_score": 162.5,
+        "min_first_innings_score": 39,
+        "max_first_innings_score": 304,
+        "std_first_innings_score": 34.9
+    },
+    "evaluation_metrics": {
+        "baseline_linear_regression": {
+            "mae": 14.68,
+            "rmse": 19.47,
+            "r2_score": 0.6993
+        },
+        "random_forest_regressor": {
+            "mae": 14.57,
+            "rmse": 19.72,
+            "r2_score": 0.6915
+        },
+        "best_model_mae": 14.57,
+        "best_model_rmse": 19.72,
+        "best_model_r2": 0.6915,
+        "prediction_interval_margin": 14.6
+    }
+}
